@@ -1,0 +1,16 @@
+{
+    "name": "dalira-php/project",
+    "description": "A lightweight PHP template for faster and easier web development.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4|^8.0",
+         "league/plates": "^3.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/Models",
+            "config\\": "config/"
+        }
+    }
+}
