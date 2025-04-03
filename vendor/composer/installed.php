@@ -3,7 +3,7 @@
         'name' => 'dalira-php/project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5892bc48d1fae90cb725c7310bce43eb024578cb',
+        'reference' => '3230305c4587174a8006ae1a23ce8be5b7052dda',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'dalira-php/project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5892bc48d1fae90cb725c7310bce43eb024578cb',
+            'reference' => '3230305c4587174a8006ae1a23ce8be5b7052dda',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
