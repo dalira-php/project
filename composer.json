@@ -12,5 +12,8 @@
             "app\\": "app/Models",
             "config\\": "config/"
         }
+    },
+    "scripts": {
+        "create-model": "php vendor/dalira-php/model/Generator.php"
     }
 }
