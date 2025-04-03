@@ -4,7 +4,7 @@ echo "
 
 #######\            ##\ ##\                           #######\  ##\   ##\ #######\  
 ##  __##\           ## |\__|                          ##  __##\ ## |  ## |##  __##\ 
-## |  ## | ######\  ## |##\  #######\   ######\        ## |  ## |## |  ## |## |  ## |
+## |  ## | ######\  ## |##\  #######\   #####\        ## |  ## |## |  ## |## |  ## |
 ## |  ## | \____##\ ## |## |##  __##\  \____##\       #######  |######## |#######  |
 ## |  ## | ####### |## |## |## |  \__| ####### |      ##  ____/ ##  __## |##  ____/ 
 ## |  ## |##  __## |## |## |## |      ##  __## |      ## |      ## |  ## |## |      
@@ -27,4 +27,22 @@ RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [L,QSA]
 
 HTACCESS;
 
+$envContent = <<<ENV
+DB_HOST=localhost
+DB_USERNAME=root
+DB_PASSWORD=
+DB_DATABASE=
+
+APP_NAME=Dalira
+APP_DESCRIPTION=A lightweight PHP template for faster and easier web development.
+APP_KEYWORDS=PHP, PHP Template, Dalira, Web Development
+APP_AUTHOR=ONESYSTEAM
+APP_ICON=public/img/favicon.png
+
+ENV;
+
 file_put_contents($projectRoot . '/.htaccess', $htaccessContent);
+file_put_contents($projectRoot . '/.env', $envContent);
+
+echo "- .htaccess file has been generated successfully!";
+echo "- .env file has been generated successfully!";
