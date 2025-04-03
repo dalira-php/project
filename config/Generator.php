@@ -1,7 +1,6 @@
 <?php
 
 echo "                                                                                         
-
 #######\            ##\ ##\                           #######\  ##\   ##\ #######\  
 ##  __##\           ## |\__|                          ##  __##\ ## |  ## |##  __##\ 
 ## |  ## | ######\  ## |##\  #######\   #####\        ## |  ## |## |  ## |## |  ## |
@@ -12,8 +11,7 @@ echo "
 \_______/  \_______|\__|\__|\__|       \_______|      \__|      \__|  \__|\__|       
 
 Dalira PHP version 2.0.0
-Developed By: Adrian Pol Peligrino
-
+Developed By: Adrian Pol Peligrino\n
 ";
 
 $projectRoot = dirname(__DIR__);
@@ -45,6 +43,5 @@ ENV;
 file_put_contents($projectRoot . '/.htaccess', $htaccessContent);
 file_put_contents($projectRoot . '/.env', $envContent);
 
-echo "- .htaccess file has been generated successfully!";
-echo "<br>";
-echo "- .env file has been generated successfully!";
+echo "- .htaccess file has been generated successfully!\n";
+echo "- .env file has been generated successfully!\n";
