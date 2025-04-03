@@ -13,6 +13,7 @@ echo "
 
 Dalira PHP version 2.0.0
 Developed By: Adrian Pol Peligrino
+
 ";
 
 $projectRoot = dirname(__DIR__);
@@ -45,4 +46,5 @@ file_put_contents($projectRoot . '/.htaccess', $htaccessContent);
 file_put_contents($projectRoot . '/.env', $envContent);
 
 echo "- .htaccess file has been generated successfully!";
+echo "<br>";
 echo "- .env file has been generated successfully!";
