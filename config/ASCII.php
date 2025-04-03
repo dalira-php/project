@@ -11,5 +11,5 @@ echo "
 #########  ######## ### ### ###     ########       ###        ###    ### ###   
 
 Dalira PHP version 2.0.0
-Developed By: ONESYSTEAM
+Developed By: Adrian Pol Peligrino
 ";
