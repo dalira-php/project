@@ -4,67 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a51735157621228ff6352160f186021",
+    "content-hash": "a954e09c5d63b95fcf6f198a27b8b996",
     "packages": [
-        {
-            "name": "dalira-php/controller",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dalira-php/controller.git",
-                "reference": "a5b0c8db43db2fbecbc40ef8cc1dc23446a3c92f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dalira-php/controller/zipball/a5b0c8db43db2fbecbc40ef8cc1dc23446a3c92f",
-                "reference": "a5b0c8db43db2fbecbc40ef8cc1dc23446a3c92f",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Dalira PHP controller generator library",
-            "support": {
-                "issues": "https://github.com/dalira-php/controller/issues",
-                "source": "https://github.com/dalira-php/controller/tree/main"
-            },
-            "time": "2025-04-03T05:40:01+00:00"
-        },
-        {
-            "name": "dalira-php/model",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dalira-php/model.git",
-                "reference": "92d34aafbfaadbf0f06300fb91be9125e1e52dba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dalira-php/model/zipball/92d34aafbfaadbf0f06300fb91be9125e1e52dba",
-                "reference": "92d34aafbfaadbf0f06300fb91be9125e1e52dba",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.4|^8.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Dalira PHP model generator library",
-            "support": {
-                "issues": "https://github.com/dalira-php/model/issues",
-                "source": "https://github.com/dalira-php/model/tree/v1.0.0"
-            },
-            "time": "2025-04-03T01:37:02+00:00"
-        },
         {
             "name": "league/plates",
             "version": "v3.6.0",
@@ -133,9 +74,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "dalira-php/controller": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
