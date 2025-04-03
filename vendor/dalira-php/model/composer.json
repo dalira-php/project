@@ -1,0 +1,9 @@
+{
+	"name": "dalira-php/model",
+	"description": "Dalira PHP model generator library",
+	"type": "library",
+	"license": "MIT",
+	"require": {
+		"php": "^7.4|^8.0"
+	}
+}

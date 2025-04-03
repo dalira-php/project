@@ -1,0 +1,9 @@
+{
+	"name": "dalira-php/controller",
+	"description": "Dalira PHP controller generator library",
+	"type": "library",
+	"license": "MIT",
+	"require": {
+		"php": "^7.4|^8.0"
+	}
+}
