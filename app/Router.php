@@ -27,11 +27,13 @@ class Router
     public static function run()
     {
         $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $basePath = '/test'; // Change this to match your base directory
-        if (strpos($requestUri, $basePath) === 0) {
-            $requestUri = substr($requestUri, strlen($basePath));
+        $projectFolder = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $projectFolder = rtrim($projectFolder, '/');
+        $pathParts = explode('/', trim($projectFolder, '/'));
+        $projectFolder = '/' . $pathParts[0];
+        if (strpos($requestUri, $projectFolder) === 0) {
+            $requestUri = substr($requestUri, strlen($projectFolder));
         }
-
         foreach (self::$routes as $route => $callback) {
             if (preg_match("#^$route$#", $requestUri, $matches)) {
                 $params = array_filter($matches, 'is_string', ARRAY_FILTER_USE_KEY);
@@ -39,7 +41,6 @@ class Router
                 return;
             }
         }
-
         echo "404 - Page Not Found";
     }
 
