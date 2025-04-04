@@ -1,13 +1,13 @@
 <?php $this->layout('Layout', ['mainContent' => $this->fetch('Layout')]) ?>
 
+<?php $this->start('mainContent') ?>
+
 <style>
     body {
         background-image: radial-gradient(#cdd9e7 1.05px, #e5e5f7 1.05px);
         background-size: 21px 21px;
     }
 </style>
-
-<?php $this->start('mainContent') ?>
 
 <div class="container d-flex align-items-center vh-100">
     <div class="row text-start">
