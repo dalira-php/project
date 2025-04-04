@@ -1,4 +1,4 @@
-<?php $this->layout('Layout') ?>
+<?php $this->layout('Layout', ['mainContent' => $this->fetch('Layout')]) ?>
 
 <style>
     body {
@@ -7,7 +7,7 @@
     }
 </style>
 
-<?php $this->section('content') ?>
+<?php $this->start('mainContent') ?>
 
 <div class="container d-flex align-items-center vh-100">
     <div class="row text-start">
@@ -17,3 +17,5 @@
         </div>
     </div>
 </div>
+
+<?php $this->stop() ?>
