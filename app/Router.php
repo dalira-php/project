@@ -11,7 +11,7 @@ class Router
         // Define routes
         self::add('/', fn() => self::render('Home'));
         self::add('/home', fn() => self::render('Home'));
- 
+
         // Add your custom routes below to handle requests and display the views.
 
         // Run the router
@@ -27,6 +27,10 @@ class Router
     public static function run()
     {
         $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $basePath = '/test'; // Change this to match your base directory
+        if (strpos($requestUri, $basePath) === 0) {
+            $requestUri = substr($requestUri, strlen($basePath));
+        }
 
         foreach (self::$routes as $route => $callback) {
             if (preg_match("#^$route$#", $requestUri, $matches)) {
@@ -39,11 +43,12 @@ class Router
         echo "404 - Page Not Found";
     }
 
-    public static function render($view)
+    public static function render($view, $data = [])
     {
         $viewPath = __DIR__ . "/Views/{$view}.php";
         if (file_exists($viewPath)) {
-            require $viewPath;
+            $templates = new \League\Plates\Engine(__DIR__ . '/Views');
+            echo $templates->render($view, $data);
         } else {
             echo "Error: View '{$view}.php' not found.";
         }
