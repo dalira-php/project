@@ -10,9 +10,6 @@ class Router
     {
         // Define routes
         self::add('/', fn() => self::render('Home'));
-        self::add('/home', fn() => self::render('Home'));
-
-        // Add your custom routes below to handle requests and display the views.
 
         // Run the router
         self::run();
