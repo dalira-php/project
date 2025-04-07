@@ -8,7 +8,7 @@ if (!function_exists('template')) {
         static $instance = null;
 
         if ($instance === null) {
-            $instance = new Engine(__DIR__ . '/app/Views');
+            $instance = new Engine(__DIR__ . '/../app/Views');
         }
 
         return $instance;
