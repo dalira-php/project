@@ -25,8 +25,7 @@ class DBConnection
                 PDO::ATTR_EMULATE_PREPARES   => false
             ]);
         } catch (PDOException $e) {
-            error_log("Database connection failed: " . $e->getMessage());
-            die("Database connection issue. Please contact support.");
+            echo template()->render('Errors/500');
         }
     }
 
