@@ -15,7 +15,9 @@
     },
     "scripts": {
         "post-install-cmd": "php config/Generator.php",
+        "serve": "php -S localhost:8000",
         "create-model": "php vendor/dalira-php/model/Generator.php",
-        "create-controller": "php vendor/dalira-php/controller/Generator.php"
+        "create-controller": "php vendor/dalira-php/controller/Generator.php",
+        "create-view": "php vendor/dalira-php/view/Generator.php"
     }
 }
