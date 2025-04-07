@@ -28,7 +28,7 @@ class ComposerStaticInita954e09c5d63b95fcf6f198a27b8b996
         ),
         'app\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/Models',
+            0 => __DIR__ . '/../..' . '/app',
         ),
         'League\\Plates\\' => 
         array (

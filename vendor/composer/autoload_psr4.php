@@ -7,6 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'config\\' => array($baseDir . '/config'),
-    'app\\' => array($baseDir . '/app/Models'),
+    'app\\' => array($baseDir . '/app'),
     'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
 );
