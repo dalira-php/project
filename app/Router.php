@@ -38,7 +38,7 @@ class Router
                 return;
             }
         }
-        template()->render('Errors/404');
+        echo template()->render('Errors/404');
     }
 
     public static function render($view, $data = [])
@@ -48,7 +48,7 @@ class Router
             $templates = new \League\Plates\Engine(__DIR__ . '/Views');
             echo $templates->render($view, $data);
         } else {
-            template()->render('Errors/404');
+            echo template()->render('Errors/404');
         }
     }
 }

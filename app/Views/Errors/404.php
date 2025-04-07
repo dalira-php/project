@@ -13,7 +13,7 @@
     <div class="row text-start">
         <div class="col-lg-12">
             <h1 class="display-3 fw-bold">Error 404</h1>
-            <p class="lead pt-3">The resource (file or route) you're trying to access may not exist, or it may have been moved or deleted.</p>
+            <p class="lead pt-3">The resource (view or route) you're trying to access may not exist.</p>
         </div>
     </div>
 </div>
