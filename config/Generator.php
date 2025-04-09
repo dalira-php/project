@@ -19,10 +19,14 @@ $projectName = basename($projectRoot);
 
 $htaccessContent = <<<HTACCESS
 RewriteEngine On
-RewriteBase /$projectName/
+RewriteBase /$projectName/public/
 
-# Redirect to clean URLs without query string
-RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [L,QSA]
+# Only rewrite if file or directory doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything to index.php
+RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?page=$1 [QSA,L]
 
 HTACCESS;
 

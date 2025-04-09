@@ -4,21 +4,21 @@ namespace app;
 
 class Router
 {
-    private static $routes = [];
+    public static $routes = [];
 
     public static function init()
     {
         // Define routes
-        self::add('/', fn() => self::render('Home'));
+        Router::add('/', Router::render('Home'));
 
         // Run the router
-        self::run();
+        Router::run();
     }
 
     public static function add($path, $callback)
     {
         $path = str_replace(['{', '}'], ['(?P<', '>[^/]+)'], $path);
-        self::$routes[$path] = $callback;
+        Router::$routes[$path] = $callback;
     }
 
     public static function run()

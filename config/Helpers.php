@@ -14,3 +14,11 @@ if (!function_exists('template')) {
         return $instance;
     }
 }
+
+function assets($path = '') {
+    $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+    $host = $_SERVER['HTTP_HOST'];
+    $scriptDir = dirname($_SERVER['SCRIPT_NAME']);
+    $base = rtrim($scheme . '://' . $host . $scriptDir, '/');
+    return $base . '/' . ltrim($path, '/');
+}

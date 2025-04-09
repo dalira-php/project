@@ -1,3 +1,3 @@
 <?php
 
-pclose(popen("start /B php -S localhost:8000 index.php", "r"));
+exec("start /B php -S localhost:8000 -t public");
