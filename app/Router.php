@@ -9,7 +9,7 @@ class Router
     public static function init()
     {
         // Define routes
-        Router::add('/', Router::render('Home'));
+        Router::add('/', fn() => Router::render('Home'));
 
         // Run the router
         Router::run();
