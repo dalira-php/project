@@ -1,16 +1,16 @@
 <?php
 
 echo "                                                                                         
-#######\            ##\ ##\                           #######\  ##\   ##\ #######\
-##  __##\           ## |\__|                          ##  __##\ ## |  ## |##  __##\
-## |  ## | ######\  ## |##\  #######\   #####\        ## |  ## |## |  ## |## |  ## |
-## |  ## | \____##\ ## |## |##  __##\  \____##\       #######  |######## |#######  |
-## |  ## | ####### |## |## |## |  \__| ####### |      ##  ____/ ##  __## |##  ____/
-## |  ## |##  __## |## |## |## |      ##  __## |      ## |      ## |  ## |## |
-#######  |\####### |## |## |## |      \####### |      ## |      ## |  ## |## |
-\_______/  \_______|\__|\__|\__|       \_______|      \__|      \__|  \__|\__|
+#######\            ##\ ##\ 
+##  __##\           ## |\__|
+## |  ## | ######\  ## |##\  #######\   #####\
+## |  ## | \____##\ ## |## |##  __##\  \____##\
+## |  ## | ####### |## |## |## |  \__| ####### |
+## |  ## |##  __## |## |## |## |      ##  __## |
+#######  |\####### |## |## |## |      \####### |
+\_______/  \_______|\__|\__|\__|       \_______|
 
-Dalira PHP version 1.0.0
+Dalira version 1.0.0
 Developed By: Adrian Pol Peligrino\n
 ";
 
@@ -36,10 +36,10 @@ DB_USERNAME=root
 DB_PASSWORD=
 DB_DATABASE=
 
-APP_NAME=Dalira PHP
+APP_NAME=Dalira
 APP_DESCRIPTION=A lightweight PHP template for faster and easier web development.
 APP_KEYWORDS=PHP, PHP Template, Dalira, Web Development
-APP_AUTHOR=ONESYSTEAM
+APP_AUTHOR=Adrian Pol Peligrino
 APP_ICON=public/img/favicon.png
 
 ENV;
