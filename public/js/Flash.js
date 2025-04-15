@@ -3,5 +3,5 @@ $(document).ready(function() {
         $(".flash-message").fadeOut("slow", function() {
             $(this).remove();
         });
-    }, 5000);
+    }, 1000);
 });
