@@ -24,7 +24,7 @@ class Router
     public static function run()
     {
         $requestUri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        
+
         foreach (self::$routes as $route => $callback) {
             if (preg_match("#^$route$#", $requestUri, $matches)) {
                 $params = array_filter($matches, 'is_string', ARRAY_FILTER_USE_KEY);
@@ -32,7 +32,7 @@ class Router
                 return;
             }
         }
-    
+
         echo template()->render('Errors/404');
     }
 
