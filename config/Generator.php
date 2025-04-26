@@ -17,12 +17,21 @@ Developed By: Adrian Pol Peligrino\n
 $projectRoot = dirname(__DIR__);
 $projectName = basename($projectRoot);
 
-$htaccessContent = <<<HTACCESS
+$htaccessRoot = <<<HTACCESS
 RewriteEngine On
 
-# Redirect everything to /public
 RewriteCond %{REQUEST_URI} !^/public/
 RewriteRule ^(.*)$ /public/$1 [L]
+
+HTACCESS;
+
+$htaccessPublic = <<<HTACCESS
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [QSA,L]
 
 HTACCESS;
 
@@ -40,7 +49,8 @@ APP_ICON=public/img/favicon.png
 
 ENV;
 
-file_put_contents($projectRoot . '/.htaccess', $htaccessContent);
+file_put_contents($projectRoot . '/.htaccess', $htaccessRoot);
+file_put_contents($projectRoot . '/public/.htaccess', $htaccessPublic);
 file_put_contents($projectRoot . '/.env', $envContent);
 
 echo "- .htaccess file has been generated successfully!\n";
