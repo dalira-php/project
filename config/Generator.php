@@ -19,14 +19,10 @@ $projectName = basename($projectRoot);
 
 $htaccessContent = <<<HTACCESS
 RewriteEngine On
-RewriteBase /$projectName/public/
 
-# Only rewrite if file or directory doesn't exist
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Route everything to index.php
-RewriteRule ^([a-zA-Z0-9_-]+)/?$ index.php?page=$1 [QSA,L]
+# Redirect everything to /public
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]
 
 HTACCESS;
 
