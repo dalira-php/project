@@ -45,7 +45,7 @@ APP_NAME=Dalira
 APP_DESCRIPTION=A lightweight PHP template for faster and easier web development.
 APP_KEYWORDS=PHP, PHP Template, Dalira, Web Development
 APP_AUTHOR=Adrian Pol Peligrino
-APP_ICON=public/img/favicon.png
+APP_ICON=/img/favicon.png
 
 ENV;
 
