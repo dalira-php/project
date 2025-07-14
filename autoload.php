@@ -1,7 +1,7 @@
 <?php
-
 /**
- * Autoloader function to automatically include class files
+
+* Autoloader function to automatically include class files
  * when they are used, based on PSR-4-like convention.
  */
 spl_autoload_register(function ($class) {
