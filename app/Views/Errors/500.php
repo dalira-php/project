@@ -1,6 +1,7 @@
-<?php $this->layout('Layout', ['title' => '404'], ['mainContent' => $this->fetch('Layout')]) ?>
-
-<?php $this->start('mainContent') ?>
+<?php 
+$this->layout('Layout', ['title' => '500'], ['mainContent' => $this->fetch('Layout')]);
+$this->start('mainContent'); 
+?>
 
 <style>
     body {
