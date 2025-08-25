@@ -11,7 +11,7 @@ echo "
 #######  |\####### |## |## |## |      \####### |
 \_______/  \_______|\__|\__|\__|       \_______|
 
-Dalira version 1.0.0
+Dalira version 1.0.1
 Developed By: Adrian Pol Peligrino\n
 ";
 
