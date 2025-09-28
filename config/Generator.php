@@ -10,7 +10,7 @@ echo "
 #######  |\####### |## |## |## |      \####### |
 \_______/  \_______|\__|\__|\__|       \_______|
 
-Dalira version 1.1.2
+Dalira version 1.1.1
 Developed By: Adrian Pol Peligrino\n
 ";
 
