@@ -1,7 +1,7 @@
 <?php
 $this->layout('Layout', ['mainContent' => $this->fetch('Layout')]);
 $this->start('mainContent');
-$this->insert('Errors/Alerts');
+$this->insert('Errors/Toasts');
 ?>
 
 <div class="container d-flex align-items-center vh-100">
