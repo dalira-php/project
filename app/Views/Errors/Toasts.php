@@ -8,7 +8,7 @@
                             <div class="toast-body">
                                 <?= htmlspecialchars($message) ?>
                             </div>
-                            <button type="buttons" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
                         </div>
                     </div>
                 <?php endforeach; ?>
