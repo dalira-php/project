@@ -21,7 +21,7 @@ if (!function_exists('assets')) {
         $host = $_SERVER['HTTP_HOST'];
         $scriptDir = dirname($_SERVER['SCRIPT_NAME']);
         $base = rtrim($scheme . '://' . $host . $scriptDir, '/');
-        
+
         return $base . '/' . ltrim($path, '/');
     }
 }

@@ -11,7 +11,7 @@ spl_autoload_register(function ($class) {
 
     foreach ($baseDirs as $baseDir) {
         $file = $baseDir . $classPath;
-        
+
         if (file_exists($file)) {
             require_once $file;
             return;
