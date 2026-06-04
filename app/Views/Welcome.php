@@ -1,5 +1,5 @@
 <?php
-$this->layout('Layout', ['mainContent' => $this->fetch('Layout')]);
+$this->layout('Layout/Layout', ['title' => htmlspecialchars($_ENV['APP_NAME'] ?? '')]);
 $this->start('mainContent');
 $this->insert('Errors/Toasts');
 ?>
